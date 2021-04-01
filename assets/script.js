@@ -1,21 +1,13 @@
-var nowTime = $("#currentDay");
+var nowTime = $("#currentDay"); {
 
-// console.log({ currentTime });
-var dynaTime = setInterval(function () {
+// console.log({ currentDay });
+var dynaTime = setInterval(function(){
   var currentDay = moment();
-  nowTime.text(
-    "the time is currently"
-    //   moveTime +
-    //   " on " +
-    //   currentTime.format("HH:mm:ss") +
-    //   " on " +
-    //   currentTime.format("yyyy/mm/dd")
-  ),
-    1000;
-});
+    nowTime.text("Todays Time" + currentDay.format("hh:mm:ss")+ "on" + currentDay.format("MM-DD-YYYY"))
+    },1000)
+}
 
-var currentTime = moment().format("HH:mm:ss");
-var moveTime = moment().format("yyyy/mm/dd");
+
 
 var hi = $("openModal");
 
