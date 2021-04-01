@@ -14,8 +14,8 @@ var dynaTime = setInterval(function () {
     1000;
 });
 
-var currentTime = currentTime.format ();
-var moveTime = currentTime.format();
+var currentTime = currentTime.format ("HH:mm:ss");
+var moveTime = currentTime.format("yyyy/mm/dd");
 
 var hi = $("openModal");
 
