@@ -15,6 +15,9 @@ console.log(currentDay)
 var saveBtn = $(".save-icon")
 
 $(".save-icon").on("click", function () {
+    / Get nearby values of the description in JQuery
+        var text = $(this).siblings(".description").val();
+        var time = $(this).parent().attr("id");
 
 })
 
